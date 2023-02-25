@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section_home .my_anime_manga {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my_anime_manga .anime_manga {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.my_anime_manga .anime_manga .studio,
+.my_anime_manga .anime_manga .record {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  flex: 100%;
+}
+.anime_manga .studio .anime_img {
+  width: 85%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.anime_img .studio_name,
+.anime_img .released_year {
+  font-weight: bold;
+}
+
+.record .rating {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.record .add_to_cart {
+  font-size: 14px;
+  color: darkcyan;
+  background: rgb(26, 24, 22);
+  padding: 0.35rem 0.8rem;
+  border-radius: 0;
+  transition: all 1s ease-in-out;
+}
+
+.record .add_to_cart:hover {
+  background: rgb(233, 233, 233);
+  border-radius: 5px;
+  outline: none;
+}
